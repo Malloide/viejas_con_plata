@@ -42,30 +42,12 @@ body {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  height: 87%;
+  height: 96%;
   text-align: center;
   justify-content: center;
-  /* animation: colorChange 5s infinite; */
 }
 
-/* @keyframes colorChange {
-  0% {
-      border-color: #e34f26; 
-  }
-  25% {
-      border-color: #ff0000; 
-  }
-  50% {
-      border-color: #00ff00; 
-  }
-  75% {
-      border-color: #0000ff; 
-  }
-  100% {
-      border-color: #e34f26; 
-  }
-}
- */
+
 .recuadro2 {
   background-color: transparent;
   display: flex;
@@ -78,7 +60,6 @@ body {
   transition: 0.5s ease-in-out;
   justify-content: center;
   align-items: center;
-  /* animation: colorChange 5s infinite; */
 }
 
 .recuadro3 {
@@ -94,8 +75,7 @@ body {
   transition: 0.5s ease-in-out;
   justify-content: center;
   align-items: center;
-/*   animation: colorChange 5s infinite;
- */}
+}
 
 .grid-container {
   display: grid;
@@ -153,8 +133,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-/*   animation: colorChange 5s infinite;
- */}
+}
 
 .imagen2 {
   transition: 0.5s ease-in-out;
@@ -165,8 +144,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-/*   animation: colorChange 5s infinite;
- */}
+}
 
 .imagen3 {
   transition: 0.5s ease-in-out;
@@ -175,8 +153,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-/*   animation: colorChange 5s infinite;
- */}
+}
 
 .imagen1:hover {
   transform: translateY(-10px);
@@ -193,30 +170,33 @@ img {
 
 .contact-bar {
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  top: 0;
+  left: -45px; 
+  height: 100%; 
+  width: auto; 
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; 
+  transition: 0.5s ease-in-out;
 }
 
 .contact-bar a {
   color: #fff;
   text-decoration: none;
-  margin: 20px;
+  margin: 10px; 
+  transition: 0.5s ease-in-out;
 }
 
 .contact-item {
-  background-color: #748CAB;
-  padding: 0.75rem 0.5rem;
+  background-color: rgb(59, 101, 160);
+  padding: 0.25rem 0.25rem;
+  min-width: 45px;
+  
 }
 
-.contact-border {
-  border-top-left-radius: 1.5rem;
-}
-
-.contact-border1 {
-  border-top-right-radius: 1.5rem;
+.contact-bar:hover{
+  transform: translateX(45px);
 }
 
 #poster {
@@ -242,4 +222,12 @@ img {
 
 html, body {
   overflow-x: hidden;
+}
+
+.contact-border{
+  border-top-right-radius: 10px;
+}
+
+.contact-border1 {
+  border-bottom-right-radius: 10px;
 }
